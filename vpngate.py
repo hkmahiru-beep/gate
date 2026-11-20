@@ -86,13 +86,13 @@ EDGE_HOSTS = [
     for h in os.environ.get(
         "EDGE_HOSTS",
         
-        "",
+        "openai.com:2053#SG,saas.sin.fan:2087#JP,prizepicks.com:2096#SG,www.broadcom.com:443#SG,serviceshub.samsclub.com:2083#SG,eii.at:2053#JP,p.etime.vip:2087#JP",
     ).split(",")
     if h.strip()
 ]
 
 # 优选 API 地址配置 (支持逗号分隔多个，可配置在 GitHub Action Secret / Env 中)
-OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/ct?ips=6&port=443")
+OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/ct?ips=6&port=443[cite: 2, 3]")
 
 NODES_URL = os.environ.get("NODES_URL", "https://hkmahiru-beep.github.io/gate/nodes.txt")
 
